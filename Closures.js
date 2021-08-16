@@ -61,3 +61,20 @@ function z(){
 }
 z();
 // 6, 5
+
+// counter function
+
+function counter(){
+    let count = 0;
+    return function increment(){
+        count++;
+        console.log(count);
+    }
+}
+const c1 = counter();
+c1(); // 1
+c1(); // 2
+
+const c2 = counter();
+c2(); // 1
+c2(); // 2
