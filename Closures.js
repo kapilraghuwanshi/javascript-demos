@@ -31,6 +31,9 @@ const z = x();
 z();
 // 5
 
+//or 
+x()();
+//5
 
 function x(){
     var a = 5;
